@@ -18,6 +18,8 @@ use Webkul\Product\Models\ProductReviewProxy;
 use Webkul\Sales\Models\InvoiceProxy;
 use Webkul\Sales\Models\OrderProxy;
 use Webkul\Shop\Mail\Customer\ResetPasswordNotification;
+use Carbon\Carbon;
+
 
 class Customer extends Authenticatable implements CustomerContract
 {
@@ -299,5 +301,62 @@ class Customer extends Authenticatable implements CustomerContract
     protected static function newFactory()
     {
         return CustomerFactory::new();
+    }
+
+    /**
+     * Generate and save OTP for phone verification
+     * 
+     * @return string Generated OTP code
+     */
+public function generatePhoneOtp(): string
+{
+    $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
+    
+    $this->update([
+        'phone_otp' => $otp,
+        'phone_otp_expires_at' => now()->addMinutes(5),
+    ]);
+
+    return $otp;
+}
+
+public function verifyPhoneOtp(string $otp): bool
+{
+    if (
+        $this->phone_otp === $otp &&
+        $this->phone_otp_expires_at &&
+        now()->isBefore($this->phone_otp_expires_at)
+    ) {
+        $this->update([
+            'phone_otp' => null,
+            'phone_otp_expires_at' => null,
+            'phone_verified' => true,
+        ]);
+        
+        return true;
+    }
+
+    return false;
+}
+
+    /**
+     * Check if customer can login with phone
+     * 
+     * @return bool
+     */
+    public function canLoginWithPhone(): bool
+    {
+        return !empty($this->phone) && $this->phone_verified;
+    }
+
+    /**
+     * Find customer by phone number
+     * 
+     * @param string $phone
+     * @return Customer|null
+     */
+    public static function findByPhone(string $phone): ?self
+    {
+        return static::where('phone', $phone)->first();
     }
 }

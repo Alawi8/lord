@@ -79,4 +79,11 @@ return [
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
         'redirect'      => env('GITHUB_CALLBACK_URL'),
     ],
+    'whatsapp' => [
+        'enabled' => env('WHATSAPP_ENABLED', true),
+        'api_url' => env('WHATSAPP_WIDERS_API_URL', 'https://apps.widers.net'),
+        'token' => env('WHATSAPP_WIDERS_TOKEN'),
+        'webhook_secret' => env('WHATSAPP_WEBHOOK_SECRET'),
+        'manager_phone' => env('WHATSAPP_MANAGER_PHONE'),
+    ],
 ];

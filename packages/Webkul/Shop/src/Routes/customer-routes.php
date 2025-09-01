@@ -9,10 +9,12 @@ use Webkul\Shop\Http\Controllers\Customer\Account\WishlistController;
 use Webkul\Shop\Http\Controllers\Customer\CustomerController;
 use Webkul\Shop\Http\Controllers\Customer\ForgotPasswordController;
 use Webkul\Shop\Http\Controllers\Customer\GDPRController;
+use Webkul\Shop\Http\Controllers\Customer\PhoneAuthController;
 use Webkul\Shop\Http\Controllers\Customer\RegistrationController;
 use Webkul\Shop\Http\Controllers\Customer\ResetPasswordController;
 use Webkul\Shop\Http\Controllers\Customer\SessionController;
 use Webkul\Shop\Http\Controllers\DataGridController;
+
 
 Route::prefix('customer')->group(function () {
     /**
@@ -22,6 +24,16 @@ Route::prefix('customer')->group(function () {
         Route::get('', 'create')->name('shop.customers.forgot_password.create');
 
         Route::post('', 'store')->name('shop.customers.forgot_password.store');
+    });
+
+    Route::controller(PhoneAuthController::class)->prefix('login')->group(function () {
+        Route::get('', 'index')->name('shop.customer.session.index');
+        Route::post('', 'store')->name('shop.customer.session.create');
+
+        // OTP routes
+        Route::post('phone/send-otp', 'sendPhoneOtp')->name('shop.customer.session.phone.send_otp');
+        Route::post('phone/verify-otp', 'verifyPhoneOtp')->name('shop.customer.session.phone.verify_otp');
+        Route::post('phone/resend-otp', 'resendPhoneOtp')->name('shop.customer.session.phone.resend_otp');
     });
 
     /**

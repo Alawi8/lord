@@ -1,0 +1,45 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main document/map background -->
+  <rect x="3" y="2" width="18" height="20" rx="2" fill="#F8F9FA" stroke="#4F46E5" stroke-width="2"/>
+  
+  <!-- Map structure - hierarchical nodes -->
+  <!-- Level 1 - Root -->
+  <circle cx="12" cy="6" r="2" fill="#4F46E5"/>
+  
+  <!-- Level 2 - Main categories -->
+  <circle cx="8" cy="10" r="1.5" fill="#10B981"/>
+  <circle cx="16" cy="10" r="1.5" fill="#10B981"/>
+  
+  <!-- Level 3 - Sub categories -->
+  <circle cx="6" cy="14" r="1" fill="#F59E0B"/>
+  <circle cx="10" cy="14" r="1" fill="#F59E0B"/>
+  <circle cx="14" cy="14" r="1" fill="#F59E0B"/>
+  <circle cx="18" cy="14" r="1" fill="#F59E0B"/>
+  
+  <!-- Level 4 - Pages -->
+  <circle cx="6" cy="18" r="0.8" fill="#EF4444"/>
+  <circle cx="8" cy="18" r="0.8" fill="#EF4444"/>
+  <circle cx="10" cy="18" r="0.8" fill="#EF4444"/>
+  <circle cx="14" cy="18" r="0.8" fill="#EF4444"/>
+  <circle cx="16" cy="18" r="0.8" fill="#EF4444"/>
+  <circle cx="18" cy="18" r="0.8" fill="#EF4444"/>
+  
+  <!-- Connection lines -->
+  <!-- From root to level 2 -->
+  <line x1="12" y1="8" x2="8" y2="8.5" stroke="#E5E7EB" stroke-width="1.5"/>
+  <line x1="12" y1="8" x2="16" y2="8.5" stroke="#E5E7EB" stroke-width="1.5"/>
+  
+  <!-- From level 2 to level 3 -->
+  <line x1="8" y1="11.5" x2="6" y2="13" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="8" y1="11.5" x2="10" y2="13" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="16" y1="11.5" x2="14" y2="13" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="16" y1="11.5" x2="18" y2="13" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- From level 3 to level 4 -->
+  <line x1="6" y1="15" x2="6" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+  <line x1="6" y1="15" x2="8" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+  <line x1="10" y1="15" x2="10" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+  <line x1="14" y1="15" x2="14" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+  <line x1="14" y1="15" x2="16" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+  <line x1="18" y1="15" x2="18" y2="17.2" stroke="#E5E7EB" stroke-width="0.8"/>
+</svg>

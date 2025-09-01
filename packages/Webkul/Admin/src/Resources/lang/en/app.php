@@ -5112,5 +5112,91 @@ return [
             'tax'                        => 'Tax',
             'tracking-number'            => 'Tracking Number : :tracking_number',
         ],
+        // WhatsApp Main Section
+        'whatsapp' => [
+            'title' => 'WhatsApp Settings',
+            'info'  => 'Configure and manage WhatsApp settings for your store',
+
+            // Basic Settings
+            'whatsapp-settings' => [
+                'title' => 'Basic Settings',
+                'info'  => 'Configure connection and basic WhatsApp settings',
+
+                'enabled'               => 'Enable WhatsApp',
+                'enabled-info'          => 'Enable or disable WhatsApp service for the store',
+
+                'api-token'             => 'API Token',
+                'api-token-info'        => 'API token for WhatsApp Business account (required when enabled)',
+
+                'phone-number'          => 'Phone Number',
+                'phone-number-info'     => 'Phone number linked to WhatsApp Business account with country code (e.g., +966501234567)',
+
+                'business-name'         => 'Business Name',
+                'business-name-info'    => 'Business or store name as it will appear in WhatsApp messages (optional)',
+            ],
+
+            // Notifications
+            'notifications' => [
+                'title' => 'WhatsApp Notifications',
+                'info'  => 'Configure notification types to be sent via WhatsApp',
+
+                'order-notifications' => [
+                    'title' => 'Order Notifications',
+                    'info'  => 'Enable or disable different order notification types',
+                ],
+
+                'customer-notifications' => [
+                    'title' => 'Customer Notifications',
+                    'info'  => 'Enable or disable customer and account notifications',
+                ],
+
+                // Order Notifications
+                'new-order'             => 'New Order',
+                'new-order-info'        => 'Send notification to customer when a new order is created',
+
+                'order-confirmation'    => 'Order Confirmation',
+                'order-confirmation-info' => 'Send confirmation message to customer after order is successfully created',
+
+                'order-shipped'         => 'Order Shipped',
+                'order-shipped-info'    => 'Notify customer when order is shipped with tracking information',
+
+                'order-delivered'       => 'Order Delivered',
+                'order-delivered-info'  => 'Notify customer when order is successfully delivered',
+
+                'order-cancelled'       => 'Order Cancelled',
+                'order-cancelled-info'  => 'Notify customer when order is cancelled',
+
+                // Customer Notifications
+                'welcome-message'       => 'Welcome Message',
+                'welcome-message-info'  => 'Send welcome message to new customers upon registration',
+
+                'account-verification'  => 'Account Verification',
+                'account-verification-info' => 'Send verification code via WhatsApp instead of email',
+
+                'password-reset'        => 'Password Reset',
+                'password-reset-info'   => 'Send password reset link via WhatsApp',
+            ],
+
+            // Message Templates
+            'templates' => [
+                'title' => 'Message Templates',
+                'info'  => 'Customize content of messages sent via WhatsApp',
+
+                'message-templates' => [
+                    'title' => 'Message Templates',
+                    'info'  => 'Customize message texts sent to customers in different situations',
+                ],
+
+                'order-confirmation-template'    => 'Order Confirmation Template',
+                'order-confirmation-template-info' => 'Message text sent when order is confirmed. Available variables: {{customer_name}}, {{order_id}}, {{total_amount}}',
+
+                'shipping-notification-template' => 'Shipping Notification Template',
+                'shipping-notification-template-info' => 'Message text sent when order is shipped. Available variables: {{customer_name}}, {{order_id}}, {{tracking_number}}',
+
+                'delivery-confirmation-template' => 'Delivery Confirmation Template',
+                'delivery-confirmation-template-info' => 'Message text sent when order is delivered. Available variables: {{customer_name}}, {{order_id}}',
+            ],
+        ],
     ],
+    
 ];

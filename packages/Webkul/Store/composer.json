@@ -1,0 +1,21 @@
+{
+    "name": "webkul/store",
+    "description": "Store Theme for Bagisto",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "webkul/core": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Store\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Store\\Providers\\StoreServiceProvider"
+            ]
+        }
+    }
+}

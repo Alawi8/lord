@@ -7,6 +7,7 @@ import.meta.glob(["../images/**", "../fonts/**"]);
  * Main vue bundler.
  */
 import { createApp } from "vue/dist/vue.esm-bundler";
+import PhoneLoginManager from "./phone-login";
 
 /**
  * Main root application registry.
@@ -18,12 +19,22 @@ window.app = createApp({
 
     mounted() {
         this.lazyImages();
+        this.initPhoneLogin();
     },
 
     methods: {
         onSubmit() {},
 
         onInvalidSubmit() {},
+
+        /**
+         * Initialize Phone Login Manager
+         */
+        initPhoneLogin() {
+            if (document.getElementById('phone-login-tab')) {
+                window.phoneLoginManager = new PhoneLoginManager();
+            }
+        },
 
         lazyImages() {
             var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));

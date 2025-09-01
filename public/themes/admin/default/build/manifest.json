@@ -264,7 +264,7 @@
     "isDynamicEntry": true
   },
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-CUhhIiKc.css",
+    "file": "assets/app-DxbqLJkj.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -360,6 +360,10 @@
     "file": "assets/zoom-CynTuPTI.svg",
     "src": "src/Resources/assets/images/product-placeholders/zoom.svg"
   },
+  "src/Resources/assets/images/settings/Links.svg": {
+    "file": "assets/Links-DPzI2mQO.svg",
+    "src": "src/Resources/assets/images/settings/Links.svg"
+  },
   "src/Resources/assets/images/settings/address.svg": {
     "file": "assets/address-DH7M3lNY.svg",
     "src": "src/Resources/assets/images/settings/address.svg"
@@ -388,6 +392,10 @@
     "file": "assets/magic-ai-C0gXN1sk.svg",
     "src": "src/Resources/assets/images/settings/magic-ai.svg"
   },
+  "src/Resources/assets/images/settings/notification.svg": {
+    "file": "assets/notification-BGrPZ55w.svg",
+    "src": "src/Resources/assets/images/settings/notification.svg"
+  },
   "src/Resources/assets/images/settings/order.svg": {
     "file": "assets/order-Bj8Kur9c.svg",
     "src": "src/Resources/assets/images/settings/order.svg"
@@ -399,6 +407,10 @@
   "src/Resources/assets/images/settings/product.svg": {
     "file": "assets/product-CoE-Gk7v.svg",
     "src": "src/Resources/assets/images/settings/product.svg"
+  },
+  "src/Resources/assets/images/settings/scripts.svg": {
+    "file": "assets/scripts-DOfr-Zfe.svg",
+    "src": "src/Resources/assets/images/settings/scripts.svg"
   },
   "src/Resources/assets/images/settings/settings.svg": {
     "file": "assets/settings-DhKa03Cc.svg",
@@ -412,6 +424,10 @@
     "file": "assets/shipping-B_qRLPCF.svg",
     "src": "src/Resources/assets/images/settings/shipping.svg"
   },
+  "src/Resources/assets/images/settings/sitemap.svg": {
+    "file": "assets/sitemap-UxJIy0IR.svg",
+    "src": "src/Resources/assets/images/settings/sitemap.svg"
+  },
   "src/Resources/assets/images/settings/store-information.svg": {
     "file": "assets/store-information-Cjd5D_oN.svg",
     "src": "src/Resources/assets/images/settings/store-information.svg"
@@ -424,9 +440,21 @@
     "file": "assets/tax-BQgwf9VP.svg",
     "src": "src/Resources/assets/images/settings/tax.svg"
   },
+  "src/Resources/assets/images/settings/template.svg": {
+    "file": "assets/template-DOYuGRPQ.svg",
+    "src": "src/Resources/assets/images/settings/template.svg"
+  },
   "src/Resources/assets/images/settings/theme.svg": {
     "file": "assets/theme-Bwf_p88V.svg",
     "src": "src/Resources/assets/images/settings/theme.svg"
+  },
+  "src/Resources/assets/images/settings/typography.svg": {
+    "file": "assets/typography-C98jW3O0.svg",
+    "src": "src/Resources/assets/images/settings/typography.svg"
+  },
+  "src/Resources/assets/images/settings/whatsapp.svg": {
+    "file": "assets/whatsapp-uqUfS0a7.svg",
+    "src": "src/Resources/assets/images/settings/whatsapp.svg"
   },
   "src/Resources/assets/images/spinner.svg": {
     "file": "assets/spinner-CkjnFMgn.svg",
@@ -445,7 +473,7 @@
     "src": "src/Resources/assets/images/unpaid-invoices.svg"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-BrTGcGr5.js",
+    "file": "assets/app-CuFIgfsL.js",
     "name": "app",
     "src": "src/Resources/assets/js/app.js",
     "isEntry": true,

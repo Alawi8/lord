@@ -1,8 +1,12 @@
 {
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-F65DyJd8.css",
+    "file": "assets/app-D1jOeAE2.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
+  },
+  "src/Resources/assets/fonts/MarkaziText-SemiBold.ttf": {
+    "file": "assets/MarkaziText-SemiBold-CrMsLQLd.ttf",
+    "src": "src/Resources/assets/fonts/MarkaziText-SemiBold.ttf"
   },
   "src/Resources/assets/fonts/bagisto-shop.woff": {
     "file": "assets/bagisto-shop-BHAKyv0r.woff",
@@ -81,7 +85,7 @@
     "src": "src/Resources/assets/images/wishlist.png"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-zmUk0CX0.js",
+    "file": "assets/app-ShGap2LJ.js",
     "name": "app",
     "src": "src/Resources/assets/js/app.js",
     "isEntry": true,

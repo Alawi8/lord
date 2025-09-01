@@ -18,7 +18,7 @@ return [
     'datagrid' => [
         'copy-of-slug'                  => 'نسخة من :value',
         'copy-of'                       => 'نسخة من :value',
-        'variant-already-exist-message' => 'التبويب بنفس خيارات السمات موجود بالفعل.',
+        'variant-already-exist-message' => 'التبويب بنفس خيارات الحقول موجود بالفعل.',
     ],
 
     'response' => [
